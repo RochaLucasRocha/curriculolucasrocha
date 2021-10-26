@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgba(207, 207, 226, 0.192);
+}
+#estrutura{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    ;
+}
+@media(max-width: 900px){
+    #main{
+        max-width: 600px;
+    }
+}
+@media(Max-width: 780px){
+    .titulo{
+        text-align: center;
+        margin: 0px auto;
+    }
+    img{
+        margin: 0 auto ;
+    }
+}
+@media(Max-width: 650px){
+    #main{
+        margin: 0px 10px;
+    }
+    header{
+        display: flex !important;
+        flex-wrap: wrap ;
+    }
+    .titulo{
+        margin: auto 0px !important;
+        font-size: 2.7em !important;
+    }
+    .imagem{
+        margin: 0 auto;
+    }
+}
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(42, 23, 94), rgb(168, 227, 230));
+    padding: 30px;
+}
+header img{
+    max-height: 150px;
+    margin-right: 100px;
+}
+.titulo{
+    font-size: 3em;
+    text-shadow:  5px 5px 5px rgb(227, 238, 167);
+    font-family: 'IM Fell English SC', serif;
+    margin-left: 100px;
+}
+.sub{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.8em;
+    background-image: linear-gradient(to right, rgb(42, 23, 94), rgb(168, 227, 230));
+    color: rgb(227, 238, 167);
+    font-family: 'IM Fell English SC', serif;
+    border-radius: 5px;
+}
+h3{
+    margin: 5px 0px;
+    font-size: 1.6em;
+}
+.instituicao{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+main{
+    background-color: white;
+    grid-area: main;
+    max-width: 800px;
+    margin: auto;
+    font-family: cursive;
+}
+li{
+    display: flex;
+    padding: 1.5px;
+    font-size: 1.1em;
+}
+.span{
+    background-color: rgb(42, 23, 94);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    font-family: 'IM Fell English SC', serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: rgb(227, 238, 167);
+    margin-top: 20px;
+}
+main p{
+    font-size: 1.2em;
+    margin-left: 30px;
+}
+footer{
+    text-align: center;
+    margin: 30px auto 0px auto;
+    padding: 50px;
+    background-image: linear-gradient(to right, rgb(42, 23, 94), rgb(168, 227, 230));
+}
+footer p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+footer p a:hover{
+    padding: 5px;
+    background-color: rgba(31, 1, 161, 0.685);
+    color: rgb(255, 255, 255);
+}
